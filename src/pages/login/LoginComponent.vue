@@ -32,7 +32,7 @@
                             </p>
                         </div>
                         <div class="field">
-                            <button class="button is-primary" @click.prevent="login">Entrar</button>
+                            <button class="button is-primary" @click.prevent="login">Entrar </button>
                         </div>
                     </div>
             </div>
