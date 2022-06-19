@@ -1,12 +1,24 @@
 <template>
   <div id="app">
+    <div>
+      <DashComponent/>
+    </div>
     <router-view></router-view>
   </div>
 </template>
 <script>
+
+ import DashComponent from './pages/components/dashboard/DashComponent.vue'
+
 export default 
   {
-    name: 'App'
+    name: 'App',
+    components: {
+      DashComponent
+    }
+    
+ 
   }
+  
 </script>
 

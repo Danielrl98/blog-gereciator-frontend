@@ -1,16 +1,15 @@
 <template>
     <div>
-        <h1>Home</h1>
+        <DashComponent />
     </div>
 </template>
 <script>
+ import DashComponent from '../components/dashboard/DashComponent.vue'
+
 export default {
-    name: "HomeComponent"
+    name: "HomeComponent",
+    components: {
+        DashComponent 
+    }
 }
 </script>
-
-<style scoped>
-h1{
-    color: blue;
-}
-</style>
