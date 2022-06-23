@@ -1,25 +1,20 @@
 <template>
-    <div class="main">
-        <div class="content-header">
-            <div class="navbar">
-              <a href="/"><img src="./img/logo.png" alt=""></a>
-              <div class="content-links">
-                <router-link to="/home">Home</router-link>
-                 <router-link to="/">Login</router-link>
-              </div>
-            </div>
-        </div>
-        <div class="sidebar">
-
-        </div>
-
-        <!----Cabeçalho do site todo-->
-        
+    <div class="main-dashboard">
+        <ContentHeader />
+        <SidebarComponent />
     </div>
 </template>
 <script>
+
+import ContentHeader from '../Header/ContentHeaderComponent.vue'
+import SidebarComponent from '../Header/SidebarComponent.vue'
+
 export default {
-    name: 'DashComponent'
+    name: 'DashComponent',
+    components: {
+        ContentHeader,
+        SidebarComponent
+    }
 }
 </script>
-<style lang="sass" src="./sass/_main.sass" scoped></style>
+<style lang="sass" src="./sass/_main.sass"></style>

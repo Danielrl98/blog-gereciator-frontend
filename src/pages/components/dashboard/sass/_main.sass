@@ -1,6 +1,6 @@
 @import './colors'
 
-.main
+.main-dashboard
     width: 100%
 
     .sidebar
@@ -11,7 +11,34 @@
         position: absolute 
         box-shadow: 1px -3px 17px 1px rgba(202,202,202,0.43)
         z-index: 999
-        display: none
+        display: flex
+        justify-content: center
+        padding: 2em 0 0 0
+
+        .avatar
+            margin-right: 10px
+
+        .avatar span
+            width: 50px
+            height: 50px
+            background-color: $littlegreen  
+            border-radius: 50% 
+            display: flex
+            justify-content: center
+            align-items: center    
+
+        .info i 
+            margin-right: 6px 
+            color: $blackgrey
+
+        .info-nome
+            font-weight: bold
+            color: $blackgrey
+
+        .status
+            color: green
+            font-weight: bold
+            font-size: 13px
 
     .content-header
         width: 100%
@@ -25,7 +52,7 @@
     .navbar
         width: 100%
         height: 100%
-        padding: 1em
+        padding: 1em 1em 1em 3em
 
         img
             width:  50px
@@ -39,7 +66,8 @@
             position: absolute
             
             a
-                padding-left: 20px
+                padding: 0 40px 0 10px 
                 color: $blackgrey
-            
-            
+                font-size: 15px
+
+    
