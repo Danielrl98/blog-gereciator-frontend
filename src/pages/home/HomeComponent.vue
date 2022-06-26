@@ -1,6 +1,10 @@
 <template>
     <div>
-        <DashComponent />
+        <DashComponent>
+            <div slot="slot-pages">
+                <p>ínicio</p>
+            </div>
+        </DashComponent>
     </div>
 </template>
 <script>

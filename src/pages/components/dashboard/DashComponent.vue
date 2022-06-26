@@ -1,7 +1,14 @@
 <template>
     <div class="main-dashboard">
-        <ContentHeader />
-        <SidebarComponent />
+        <div class="headComponent">
+            <ContentHeader />
+        </div>
+        <div class="sideComponent">
+            <SidebarComponent />
+        </div>
+        <div class="pages">
+            <slot name="slot-pages"></slot>
+        </div>
     </div>
 </template>
 <script>

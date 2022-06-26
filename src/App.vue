@@ -21,4 +21,5 @@ export default
   }
   
 </script>
+<style lang="sass" src="./sass/_main.sass"></style>
 

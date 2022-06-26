@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="content-header" v-on:click="teste">
+        <div class="content-header" >
                 <div class="navbar">
-                    <a href="/"><img src="../dashboard/img/logo.png" alt=""></a>
+                    <router-link :to="{name: 'home'}"><img src="../dashboard/img/logo.png" alt=""></router-link>
                     <div class="content-links">
-                        <i class="fa fa-sign-out-alt"><router-link to="/home">Sair</router-link></i>
+                     <router-link :to="{name: 'login'}"><i class="fa fa-sign-out-alt" v-on:click="teste">Sair</i></router-link>
                     </div>
                 </div>
         </div>
@@ -17,7 +17,7 @@ export default {
     name : 'ContentHeader',
     methods: {
         teste(){
-            this.$router.push({name: 'login'})
+           // this.$router.push({name: 'home'})
         }
     }
 }
