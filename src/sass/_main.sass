@@ -1,4 +1,47 @@
 @import './_colors'
 
+.cp-cards
+    padding: 2em 0 0 0
+
 .title-pages p
     font-size:20px
+
+.my-cards
+    display: flex
+    flex-direction: column
+    width: 300px
+    background-color: $corvue
+    padding: 20px
+    border-radius: 7px
+    
+    .content
+        display: flex
+        justify-content: space-between 
+        
+        .my-cards-name
+            color: white
+
+        .percentage
+            color: #00570e
+            font-size: 20px
+
+.cp-cards-footer
+    color: white
+    display: flex
+    justify-content: space-between
+
+    .ico
+        font-size: 30px
+
+    .qtd
+        font-size: 20px
+    
+.grid-cards
+    width: 100%
+    height: 100%
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    
+@media(max-width: 967px)
+    .grid-cards
+        grid-template-columns: 1fr
