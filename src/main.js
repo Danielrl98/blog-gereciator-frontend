@@ -4,6 +4,8 @@ import VueRouter from 'vue-router'
 import LoginComponent from './pages/login/LoginComponent.vue'
 import HomeComponent from './pages/home/HomeComponent.vue'
 import ProductsComponent from './pages/products/ProductsComponent.vue'
+import ClienteComponent from './pages/clientes/ClienteComponent.vue'
+
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
@@ -19,7 +21,8 @@ Vue.config.productionTip = false
 const routes = [
   { path: '/', name: 'login', component: LoginComponent },
   { path: '/home',name: 'home', component: HomeComponent},
-  { path: '/produtos',name: 'products', component: ProductsComponent}
+  { path: '/produtos',name: 'products', component: ProductsComponent},
+  { path: '/clientes', name:'client', component: ClienteComponent }
 ]
 
 const router = new VueRouter({
